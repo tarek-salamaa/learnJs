@@ -1,0 +1,15 @@
+>> Math Methom:
+- toString
+- isString
+- inNaN
+- paresInt & paresFloot
+- toFixed
+
+>> Math Methom:
+- rond
+- random
+- floot
+- ceil
+- trunc
+- pow
+- Min & Max
