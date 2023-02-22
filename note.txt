@@ -6,6 +6,7 @@
 - isInteger() == Check The Valuo Integer Or Not Integer.
 - inNaN() == Check Back Valuo You Is NaN Or No.
 
+
 >> Math Object:
 - round()
 - ceil()
@@ -16,10 +17,25 @@
 - random()
 - trunc()
 
+
 >> String Object:
-- []
-- charAt()
-- trim()
-- toUppercase()
-- toLowercase()
+- Access With Index > [ ]
+- Access With charAt()
 - length
+- trim()
+- toUpperCase()
+- toLowerCase()
+
+> Part Two:
+- indexOf (Value [Mand], Start [Opt] 0)
+- lastIndexOf (Value [Mand], Start [Opt] Length)
+- slice (Start [Mand], End [Opt] Not Include End)
+- repeat (Times) [ES6]
+- split (Separator [Opt], Limit [Opt])
+
+> Part Three:
+- substring() == slice But Swap 6 - 0
+- substr()
+- includes()
+- startsWith()
+- endsWith()

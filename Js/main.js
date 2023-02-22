@@ -1,16 +1,22 @@
-let myName = "  Tarek  ";
+let a = "Elzero Web School";
 
-console.log(myName[0]);
-console.log(myName[5]);
+console.log(a.length);
 
-console.log(myName.charAt(0));
-console.log(myName.charAt(5));
+console.log(a.substring(2, 6));
+console.log(a.substring(6, 2));
+console.log(a.substring(-10, 6)); // 0 - 6
+console.log(a.substring(a.length - 5, a.length - 3));
 
-console.log(myName.length);
+console.log(a.substr(0, 6));
+console.log(a.substr(17));
+console.log(a.substr(-3));
+console.log(a.substr(-5, 2));
 
-console.log(myName.trim());
+console.log(a.includes("Web"));
+console.log(a.includes("Web", 8));
 
-console.log(myName.toUpperCase());
-console.log(myName.toLowerCase());
+console.log(a.startsWith("E"));
+console.log(a.startsWith("E", 2));
+console.log(a.startsWith("zero", 2));
 
-console.log(myName.trim().charAt(4).toUpperCase());
+console.log(a.endsWith("l"));
