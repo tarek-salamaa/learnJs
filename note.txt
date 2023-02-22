@@ -1,15 +1,25 @@
->> Math Methom:
-- toString
-- isString
-- inNaN
-- paresInt & paresFloot
-- toFixed
+>> Number Object:
+- toString() == This Method Comes Back From Number > String. 
+- toFixed() == Fix The Flooting Number Control In How Number Floot Will Appear.
+- parsInt() == Pars To String  And Extract Number.
+- parsFloot() == Pars To String And Extract Flooting Number.
+- isInteger() == Check The Valuo Integer Or Not Integer.
+- inNaN() == Check Back Valuo You Is NaN Or No.
 
->> Math Methom:
-- rond
-- random
-- floot
-- ceil
-- trunc
-- pow
-- Min & Max
+>> Math Object:
+- round()
+- ceil()
+- floor()
+- min()
+- max()
+- pow()
+- random()
+- trunc()
+
+>> String Object:
+- []
+- charAt()
+- trim()
+- toUppercase()
+- toLowercase()
+- length
