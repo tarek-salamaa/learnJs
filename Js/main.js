@@ -1,22 +1,43 @@
-let a = "Elzero Web School";
+// let day = "   friday  ";
+// // You Need To Remove Spaces And Make First Letter Capital => Friday
 
-console.log(a.length);
+// let day = "Friday";
+// let day = "Saturday";
+// let day = "Sunday";
+// // Output => "No Appointments Available"
 
-console.log(a.substring(2, 6));
-console.log(a.substring(6, 2));
-console.log(a.substring(-10, 6)); // 0 - 6
-console.log(a.substring(a.length - 5, a.length - 3));
+// let day = "Monday";
+// let day = "Thursday";
+// // Output => "From 10:00 AM To 5:00 PM"
 
-console.log(a.substr(0, 6));
-console.log(a.substr(17));
-console.log(a.substr(-3));
-console.log(a.substr(-5, 2));
+// let day = "Tuesday";
+// // Output => "From 10:00 AM To 6:00 PM"
 
-console.log(a.includes("Web"));
-console.log(a.includes("Web", 8));
+// let day = "Wednesday";
+// // Output => "From 10:00 AM To 7:00 PM"
 
-console.log(a.startsWith("E"));
-console.log(a.startsWith("E", 2));
-console.log(a.startsWith("zero", 2));
+// let day = "World";
+// // Output => "Its Not A Valid Day"
 
-console.log(a.endsWith("l"));
+let day = "  tarek  ";
+let aDay = day.trim().slice(0, 1).toUpperCase() + day.trim().slice(1);
+
+switch (aDay) {
+  case "Friday":
+  case "Saturday":
+  case "Sunday":
+    console.log("No Appointments Available");
+    break;
+  case "Monday":
+  case "Thursday":
+    console.log("From 10:00 AM To 5:00 PM");
+    break;
+  case "Tuesday":
+    console.log("From 10:00 AM To 6:00 PM");
+    break;
+  case "Wednesday":
+    console.log("From 10:00 AM To 7:00 PM");
+    break;
+  default:
+    console.log("Its Not A Valid Day");
+}

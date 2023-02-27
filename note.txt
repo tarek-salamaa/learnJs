@@ -39,3 +39,45 @@
 - includes()
 - startsWith()
 - endsWith()
+
+>> Comparison Operators
+- == Equal
+- != Not Equal
+
+- === Identical
+- !== Not Identical
+
+- > Larger Than
+- >= Larger Than Or Equal
+
+- < Smaller Than
+- <= Smaller Than Or Equal
+
+
+>> Logical Operators
+- ! Not
+- && And
+- || Or
+
+
+
+>> Notion Lesson #034
+let price = 100;
+let discount = false;
+let discountAmount = 30;
+let country = "EG";
+let student = true;
+
+if (discount === true) {
+  price -= discountAmount;
+} else if (country === "EG") {
+  if (student === true) {
+    price -= discountAmount + 20;
+  } else {
+    price -= discountAmount;
+  }
+} else {
+  price -= 10;
+}
+
+console.log(price);
