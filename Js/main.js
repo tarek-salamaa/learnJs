@@ -1,43 +1,36 @@
-// let day = "   friday  ";
-// // You Need To Remove Spaces And Make First Letter Capital => Friday
+let products = ["Keybord", "Mouse", "Pen", "Pad", "Ram"];
 
-// let day = "Friday";
-// let day = "Saturday";
-// let day = "Sunday";
-// // Output => "No Appointments Available"
+let color = ["red", "green", "blue"];
 
-// let day = "Monday";
-// let day = "Thursday";
-// // Output => "From 10:00 AM To 5:00 PM"
+// Break >> Stop The Loop
 
-// let day = "Tuesday";
-// // Output => "From 10:00 AM To 6:00 PM"
+// for (let i = 0; i < products.length; i++) {
+//   console.log(products[i]);
+//   if (products[i] === "Pen") {
+//     break;
+//   }
+// }
 
-// let day = "Wednesday";
-// // Output => "From 10:00 AM To 7:00 PM"
+// continue
 
-// let day = "World";
-// // Output => "Its Not A Valid Day"
+// for (let i = 0; i < products.length; i++) {
+//   if (typeof products[i] === "number") {
+//     continue;
+//   }
+//   console.log(products[i]);
+// }
 
-let day = "  tarek  ";
-let aDay = day.trim().slice(0, 1).toUpperCase() + day.trim().slice(1);
+// Lable
 
-switch (aDay) {
-  case "Friday":
-  case "Saturday":
-  case "Sunday":
-    console.log("No Appointments Available");
-    break;
-  case "Monday":
-  case "Thursday":
-    console.log("From 10:00 AM To 5:00 PM");
-    break;
-  case "Tuesday":
-    console.log("From 10:00 AM To 6:00 PM");
-    break;
-  case "Wednesday":
-    console.log("From 10:00 AM To 7:00 PM");
-    break;
-  default:
-    console.log("Its Not A Valid Day");
+mainLoop: for (let i = 0; i < products.length; i++) {
+  console.log("#".repeat(10));
+  console.log(products[i]);
+  console.log("#".repeat(10));
+  console.log("Colors:");
+  nestedLoop: for (let j = 0; j < color.length; j++) {
+    console.log(`- ${color[j]}`);
+    if (color[j] === "green") {
+      break mainLoop;
+    }
+  }
 }
