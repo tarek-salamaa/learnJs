@@ -1,36 +1,15 @@
-let products = ["Keybord", "Mouse", "Pen", "Pad", "Ram"];
+let products = ["Keybord", "Mouse", "Pen", "Pad", "Ram", "Ssd"];
+let colors = ["red", "green", "blue"];
+let showCount = 2;
 
-let color = ["red", "green", "blue"];
+document.write(`<h1>Show ${showCount} Products</h1>`);
 
-// Break >> Stop The Loop
-
-// for (let i = 0; i < products.length; i++) {
-//   console.log(products[i]);
-//   if (products[i] === "Pen") {
-//     break;
-//   }
-// }
-
-// continue
-
-// for (let i = 0; i < products.length; i++) {
-//   if (typeof products[i] === "number") {
-//     continue;
-//   }
-//   console.log(products[i]);
-// }
-
-// Lable
-
-mainLoop: for (let i = 0; i < products.length; i++) {
-  console.log("#".repeat(10));
-  console.log(products[i]);
-  console.log("#".repeat(10));
-  console.log("Colors:");
-  nestedLoop: for (let j = 0; j < color.length; j++) {
-    console.log(`- ${color[j]}`);
-    if (color[j] === "green") {
-      break mainLoop;
-    }
+for (let i = 0; i < showCount; i++) {
+  document.write(`<div>`);
+  document.write(`<h3 class="title">[${i + 1}] ${products[i]}</h3>`);
+  for (let j = 0; j < colors.length; j++) {
+    document.write(`<p class="color">- ${colors[j]}</p>`);
   }
+  document.write(colors.join(" | "));
+  document.write(`</div>`);
 }
